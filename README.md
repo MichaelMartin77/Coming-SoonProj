@@ -8,7 +8,8 @@ Week 1 - Landing Page Project for Freemote
 
 ## Technology used 
  
-• HTML 
+• HTML
+
 • CSS
 
 
