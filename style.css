@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body, html {
+    min-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    font-family: AdiHaus;
+  }
+  
+  body {
+    display: flex;
+  }
+  
+  h2, p {
+     margin: 0;
+  }
+  
+  h2 {
+    font-size: 48px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  
+  p {
+    line-height: 28px;
+    margin: 20px 0 40px;
+    color: #333333;
+  }
+  
+  h2:nth-of-type(1) {
+    color: #2F80ED;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  
+  h2:nth-of-type(2) {
+    color: #423A3A
+  }
+  
+  
+  .container {
+    max-width: 500px;
+    margin: 5px auto;
+    height: 95vh;
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto; 
+  }
+  
+  #athlete-girl {
+    background: url("https://assets.codepen.io/6060109/mobile-shoes.jpg") no-repeat right center;
+    background-size: cover;
+    height: 250px;
+    margin-top: 0.5rem;
+  }
+  
+  .all-content {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-style: normal;
+    padding: 20px 30px;
+  }
+  
+  .first-word {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 5px;
+    color: #CD3A24;
+    text-transform: uppercase;
+  }
+  
+  .coming-soon {
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: #423A3A;
+  }
+  
+  .welcome-text {
+    font-family: AdiHaus;
+    font-style: normal;
+    font-weight: normal;
+    color: #333333;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  
+  form {
+    margin-top: 3rem; 
+    display: flex;
+  }
+  
+  input[type="text"] {
+    border: 1px solid #333333;
+    color: #828282;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 75%;
+    height: 50px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  
+  input[type="submit"] {
+    width: 20%;
+    height: 50px;
+    background: rgb(124,124,124);
+    background: linear-gradient(90deg, rgba(124,124,124,1) 0%, rgba(124,124,124,1) 0%, rgba(43,40,40,1) 100%);
+    color: white; 
+    box-sizing: border-box;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: none;
+    font-size: 34px;
+  }
+  
+  .desktop-image {
+    display: none; 
+  }
+  
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    body {
+      background: url("https://assets.codepen.io/6060109/waves.png");
+      background-size: cover;
+    }
+    
+    h2 {
+      font-size: 64px;
+    }
+    
+    .container {
+      width: 50%;
+    }  
+    
+    .all-content {
+      text-align: left;
+    }
+    
+    #athlete-girl {
+      display: none;
+    }
+    
+    .logo {
+      margin: 30px 30px 100px;  
+      display: block;
+    }
+    
+    
+    .desktop-image {
+      display: block;
+      width: 50%;
+      background: url("https://assets.codepen.io/6060109/shoes.png");
+      background-size: cover;
+    }
+    
+    
+  }
